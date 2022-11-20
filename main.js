@@ -42,12 +42,12 @@ function parametricShuriken(){
     var x = 4*Math.PI + 4*Math.PI*(Math.cos(2*Math.PI*15*t) - Math.cos(2*Math.PI))
     var y = Math.cos(4*Math.PI) - 4*Math.PI*(Math.sin(2*Math.PI*40*t) - Math.sin(2*Math.PI))
     var z = 10*Math.sin(x)
-    points.push( new Vector3(x,y,z))
+    points.push( new THREE.Vector3(x,y,z))
   }
   const material = new THREE.LineBasicMaterial({color: 0xfb5607});
   const geometry = new THREE.BufferGeometry().setFromPoints( points );
   const line = new THREE.Line( geometry, material );
-  line.scale.multiply( new Vector3(2,2,2))
+  line.scale.multiply( new THREE.Vector3(2,2,2))
   return line;
 }
 function parametricCircle(){
@@ -56,12 +56,12 @@ for( var t=0; t<300; t+=0.1){
   var x = -35*Math.cos(t)+65*Math.cos(-0.35*t);
   var y = -35*Math.sin(t)+65*Math.sin(-0.35*t);
   var z = t/2;
-  points.push( new Vector3(x,y,z))
+  points.push( new THREE.Vector3(x,y,z))
 }
 const material = new THREE.LineBasicMaterial({color: 0xffd500});
 const geometry = new THREE.BufferGeometry().setFromPoints( points );
 const line = new THREE.Line( geometry, material );
-line.scale.multiply( new Vector3(0.2,0.2,0.2))
+line.scale.multiply( new THREE.Vector3(0.2,0.2,0.2))
 return line;
 }
 
@@ -86,7 +86,7 @@ function calculateAttractor(posX,posY){
       y = y + dy;
       z = z + dz;
   
-      points.push( new Vector3(x -6,y-6,z))
+      points.push( new THREE.Vector3(x -6,y-6,z))
   }
 
   const material = new THREE.LineBasicMaterial({color: 0x16db93});
@@ -103,12 +103,12 @@ for( var t=0; t<Math.PI*4; t+=0.01){
   var x = t - 1.6* Math.sin(24*t);
   var y = t - 1.6* Math.sin(25*t);
   var z = t/10
-  points.push( new Vector3(x,y,z))
+  points.push( new THREE.Vector3(x,y,z))
 }
 const material = new THREE.LineBasicMaterial({color: 0xea3546});
 const geometry = new THREE.BufferGeometry().setFromPoints( points );
 const line = new THREE.Line( geometry, material );
-line.scale.multiply( new Vector3(4.0,4.0,20.0))
+line.scale.multiply( new THREE.Vector3(4.0,4.0,20.0))
 return line;
 }
 
@@ -118,12 +118,12 @@ function butteflyCurve(){
     var x = Math.sin(t) * ((Math.exp(Math.cos(t))) - (2 * Math.cos(4 * t)) - (Math.pow(Math.sin(t / 12), 5)));
     var y = Math.cos(t) * ((Math.exp(Math.cos(t))) - (2 * Math.cos(4 * t)) - (Math.pow(Math.sin(t / 12), 5)));
     var z = Math.sign(x)*2*Math.sin(x)
-    points.push(new Vector3(x,y,z))
+    points.push(new THREE.Vector3(x,y,z))
   }
 const material = new THREE.LineBasicMaterial({color: 0x4c4cfc});
 const geometry = new THREE.BufferGeometry().setFromPoints( points );
 const line = new THREE.Line( geometry, material );
-line.scale.multiply( new Vector3(4.0,4.0,4.0))
+line.scale.multiply( new THREE.Vector3(4.0,4.0,4.0))
 return line;
 }
 
