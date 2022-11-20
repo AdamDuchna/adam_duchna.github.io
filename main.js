@@ -1,5 +1,5 @@
 import '/style.css';
-import * as THREE from './node_modules/three.js';
+import * as THREE from './node_modules/three/build/three.module.js';
 
 window.onscroll = function(){changeColor()}
 
