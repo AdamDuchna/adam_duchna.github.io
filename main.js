@@ -1,6 +1,6 @@
 import '/style.css';
-import * as THREE from './three';
-import { Vector2, Vector3 } from './three';
+import * as THREE from './node_modules/three';
+import { Vector2, Vector3 } from './node_modules/three';
 
 window.onscroll = function(){changeColor()}
 
