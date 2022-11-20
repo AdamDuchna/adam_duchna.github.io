@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Adam Duchna</title>
+    <script type="module" crossorigin src="/assets/index.83ba2cc4.js"></script>
+    <link rel="stylesheet" href="/assets/index.fd38f54a.css">
+  </head>
+  <body>
+    <canvas id="background"></canvas>
+    <main>
+      <div class="name-wrapper">
+      <div class="name" id="home">Adam Duchna</div>
+      </div>
+      <nav>
+        <div id="home" class="options">
+            <a href="#home" class="filler">Home</a>
+            <a href="#about"  class="filler">About</a>
+            <a href="#projects" class="filler">Projects</a>
+            <a href="#cv" class="filler">CV</a>
+            <a href="#contact" class="filler">Contact</a>
+        </div>
+      </nav>
+      <div class="info-wrapper">
+        <div class="empty-block"></div>
+        <div class="about-wrapper">
+        <div id="about">
+          <div class="title">ABOUT</div>
+          <div class="text">
+          Im a student in the final year of Informatics.
+          Throughout my studies, I've gained knowledge and practice in
+          multiple fields such as DevOps, FrontEnd, BackEnd and Data Science.
+          Obviously in 3 years I could not really master thoose fields
+          but I surely got to find my own niches and expand into them.
+          Currently my greatest interests are Computational Intelligence
+          and Frontend Development but in my free time I also enjoy Graphic Design
+          and 3D Modeling.
+          </div>
+        </div>
+        </div>
+        <div class="empty-block"></div>
+        <div class="projects-wrapper">
+        <div id="projects">
+          <div class="title">PROJECTS</div>
+          <div class="text">
+            <div>FRONTEND</div>
+            <div class="projects-list">
+              <a href="https://github.com/AdamDuchna/GamesDatabase/tree/master/games_database_project">
+                Games database
+                <div class="description">
+                  Fully developed webapp, that contains games and their covers.
+                  The webapp is written in React and secured using keycloak as are all its API endpoints.
+                  Additionally all the elements were Dockerized and the whole project was deployed to a Kubernetes cluster.
+                </div>
+              </a>
+              <a href="https://github.com/AdamDuchna/ElectronicsForum/tree/master/projekt">
+                Electonics forum
+                <div class="description">
+                  Online forum webiste with user roles, live website state update between users and login authorization.
+                  Created using Redux, Node.js and MongoDB.
+                </div>
+              </a>
+              <a href="https://github.com/AdamDuchna/social_media_project">Social media app
+                <div class="description">
+                  Social media webapp that allows for posting photos and short videos.
+                  It also has profile customization, friends and followers.
+                  Created using React, Node.js and MongoDB. 
+                </div>
+              </a>
+            </a>
+            </div>
+            <div>COMPUTATIONAL INTELLIGENCE</div>
+            <div class="projects-list">
+            <a href="https://github.com/AdamDuchna/INF_Adam_Duchna_275035/tree/main/Projekt_Particle_Clustering">
+              Finding global minima for particle clusters
+              <div class="description">
+                Python program that solves the problem of finding energetic global minima for certain clusters of particles.
+                It uses two approaches Particle Swarm Optimization and Genetic Algorithm.
+              </div>
+            </a>
+            <a href="https://github.com/AdamDuchna/INF_Adam_Duchna_275035/tree/main/Projekt2_News_Classification">
+              Fake news classification
+              <div class="description">
+                Python program that focuses on classifying news
+                as either fake or real based on their title and content.
+                It creates classifiers based on TF-IDF(Term Frequency–Inverse Document Frequency) of words processed using NLTK Python library.
+              </div>
+            </a>
+            <a>Self-written Nonconvolutional Neural Network
+              <div class="description">
+                Non-convolutional Neural Network written in Python using numpy.
+                Based on gradient descent backward propagation algorithm and using ReLU activation function. 
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="empty-block"></div>
+        <div class="cv-wrapper">
+        <div id="cv">
+          <div class="title">CV</div>
+          <div class="subsection">
+          <div class="subsection-title">PROGRAMMING LANGUAGES</div>
+          <div class="divider"><div>JavaScript</div><div class="js"></div></div>
+          <div class="divider"><div>Python</div><div class="python"></div></div>
+          <div class="divider"><div>Java</div><div class="java"></div></div>
+          <div class="divider"><div>Scala</div><div class="scala"></div></div>
+          <div class="divider"><div>C++</div><div class="cpp"></div></div>
+          </div>
+          <div class="subsection">
+          <div class="subsection-title">SPOKEN LANGUAGES</div>
+          <div>Polish Native</div>
+          <div>English C1/C2</div>
+          </div>
+          <div class="subsection">
+          <div class="subsection-title">EDUCATION</div>
+          <div>Practical Informatics</div>
+          <div>University Of Gdańsk</div>
+          <div>2020-2023</div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="empty-block"></div>
+        <div id="contact">
+          <div class="title">CONTACT</div>
+          <div class="text">
+            <div>+48 515 966 190</div>
+            <div>adamduchna43@gmail.com</div>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="cb985fae-c43f-4f06-9b97-9c84d5e3e9d5">
+            <div>Full name</div>
+            <input placeholder="John Kowalski" type="text" name="name" required>
+            <div>Email adress</div>
+            <input placeholder="sample@email.com" type="email" name="email" required>
+            <div>Your message</div>
+            <textarea placeholder="Your Message" name="message" required></textarea>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+        <div class="empty-block"></div>
+    </div>
+    </main>
+    
+  </body>
+</html>
