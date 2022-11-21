@@ -139,12 +139,8 @@ main .options, main .name {
   background-image: linear-gradient(to right, #000000 0%, #000000 20%, white 20%, white 100%);
 }
 
-@media only screen and (max-width: 1000px) {
-  #about, #projects, #cv, #contact {
-    width: 50vw;
-  }
-}
 form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -172,6 +168,8 @@ form div {
   padding-bottom: 10px;
 }
 form button {
+  font-weight: 800;
+  color: #4c4cfc;
   margin-top: 20px;
 }
 form input:focus {
@@ -194,4 +192,28 @@ a:hover .description {
   overflow: hidden;
   transition: max-height 0.6s ease-in-out;
   transition-delay: 0.1s;
+}
+
+@media (max-width: 1000px) {
+  #about, #projects, #cv, #contact {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 760px) {
+  #about, #projects, #cv, #contact {
+    width: 100vw;
+  }
+  main {
+    font-size: 5vw;
+  }
+  main .name-wrapper {
+    height: auto;
+  }
+  main nav {
+    display: none;
+  }
+  main .js, main .python, main .java, main .scala, main .cpp {
+    width: 40vw;
+    height: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
