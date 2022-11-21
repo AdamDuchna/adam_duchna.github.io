@@ -30,7 +30,6 @@ function changeColor(){
 }
 
 function moveCamera(){
-  console.log(camera.position.x, camera.position.y )
   camera.position.x = Math.round(window.scrollY/window.innerHeight * 120)
   camera.position.y =  Math.round(window.scrollY/window.innerHeight * 120)
 }
