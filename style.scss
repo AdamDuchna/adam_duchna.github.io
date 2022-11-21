@@ -153,20 +153,16 @@ a:hover .description{
 }
 
 @media screen and (max-width: 760px) {
-  #about, #projects, #cv, #contact{
-    width: 100vw;
-  }
+  #about, #projects, #cv, #contact{width: 100vw;}
   main{
-    font-size: 5vw;
-    .name-wrapper{
-      height: auto;
-    }
-    nav{
-      display: none;
-    }
+    font-size: 22px;
+    nav{display: none;}
     .js,.python,.java,.scala,.cpp{
-      width: 40vw;
+      width: 200px;
       height: 5vw;
     }
+    #cv .subsection .divider{ width: 100%; }
+    .empty-block:first-child{height: 100vh;}
+    .empty-block{height: 0px;}
   }
 }

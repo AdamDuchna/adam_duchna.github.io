@@ -204,16 +204,22 @@ a:hover .description {
     width: 100vw;
   }
   main {
-    font-size: 5vw;
-  }
-  main .name-wrapper {
-    height: auto;
+    font-size: 22px;
   }
   main nav {
     display: none;
   }
   main .js, main .python, main .java, main .scala, main .cpp {
-    width: 40vw;
+    width: 200px;
     height: 5vw;
+  }
+  main #cv .subsection .divider {
+    width: 100%;
+  }
+  main .empty-block:first-child {
+    height: 100vh;
+  }
+  main .empty-block {
+    height: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
