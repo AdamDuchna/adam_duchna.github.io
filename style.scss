@@ -154,12 +154,15 @@ a:hover .description{
 }
 
 @media screen and (max-width: 760px) {
-  #about, #projects, #cv, #contact{width: 100vw;}
+  #about, #projects, #cv, #contact{width: auto;}
   main{
     font-size: 5vw;
-    nav{display: none;}
+    nav{
+      width: 0px;
+      height: 0px;
+      display: none;}
     .js,.python,.java,.scala,.cpp{
-      width: 200px;
+      width: 50%;
       height: 5vw;
     }
     #cv .subsection .divider{ width: 80%; }
