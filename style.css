@@ -222,9 +222,6 @@ a:hover .description {
   main .empty-block:first-child {
     height: 100vh;
   }
-  main .empty-block {
-    height: 0px;
-  }
   main .text {
     margin-right: 60px;
   }

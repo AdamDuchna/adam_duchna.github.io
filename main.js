@@ -32,6 +32,10 @@ function changeColor(){
 function moveCamera(){
   camera.position.x = Math.round(window.scrollY/window.innerHeight * 120)
   camera.position.y =  Math.round(window.scrollY/window.innerHeight * 120)
+  if(window.innerWidth <= 760){
+    camera.position.x +=40;
+  }
+
 }
 
 
@@ -208,6 +212,14 @@ camera.position.y = 4;
 camera.position.z=40;
 
 window.addEventListener( 'resize', onWindowResize );
+
+if(window.innerWidth <= 760){
+  line.position.x +=40;
+  line2.position.x +=40;
+  line3.position.x +=40;
+  line4.position.x +=40;
+  camera.position.x = 40;
+}
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight);
