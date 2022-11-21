@@ -148,6 +148,7 @@ form input, form input:focus, form textarea, form button {
   border: none;
 }
 form textarea {
+  width: 80%;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 200px;
@@ -204,7 +205,7 @@ a:hover .description {
     width: 100vw;
   }
   main {
-    font-size: 22px;
+    font-size: 5vw;
   }
   main nav {
     display: none;
@@ -214,12 +215,15 @@ a:hover .description {
     height: 5vw;
   }
   main #cv .subsection .divider {
-    width: 100%;
+    width: 80%;
   }
   main .empty-block:first-child {
     height: 100vh;
   }
   main .empty-block {
     height: 0px;
+  }
+  main .text {
+    margin-right: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
