@@ -146,6 +146,9 @@ a:hover .description{
   transition: max-height 0.6s ease-in-out;
   transition-delay: 0.1s;
 }
+.mobile-arrow{
+  display: none;
+}
 
 @media (max-width: 1000px) {
   #about, #projects, #cv, #contact{
@@ -171,4 +174,22 @@ a:hover .description{
       margin-right: 60px;
     }
   }
+  .mobile-arrow{
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 32px solid white;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc( 100vh - 60px);
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+  }
+}
+
+
+@keyframes downarrow {
+  0% { -webkit-transform: translateY(0); opacity: 0.7 }
+  100% { -webkit-transform: translateY(0.8em); opacity: 1 }
 }
