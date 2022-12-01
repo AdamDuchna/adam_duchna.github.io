@@ -32,7 +32,7 @@ function changeColor(){
 function moveCamera(){
   camera.position.x = Math.round(window.scrollY/window.innerHeight * 120)
   camera.position.y =  Math.round(window.scrollY/window.innerHeight * 120)
-  if(window.innerWidth <= 760){
+  if(window.innerWidth <= 800){
     camera.position.x +=40;
   }
 

@@ -21,8 +21,8 @@ html { scroll-behavior: smooth; }
 main{
   position: absolute;
   color: white;
-  font-size: xx-large;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: xx-large;
   height: 200vh;
   nav{
     border:2px white solid;
@@ -51,17 +51,18 @@ main{
 .filler:hover {background-size: 100% 100%;}
 #about, #projects, #cv, #contact{
   padding: 40px;
+  font-size: 4vh;
   width: 40vw;
-  height: 100vh;
+  height: calc( 100vh - 80px);
   .projects-list{
+    padding: 10px;
     font-size: smaller;
     flex-direction: column;
     display:flex;
-    padding-bottom: 20px;
     a{
       cursor: pointer;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
   }
   .subsection{
@@ -105,8 +106,8 @@ form{
     width: 80%;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 200px;
-    max-height: 400px;
+    min-height: 16vh;
+    max-height: 20vh;
     resize: vertical;
     border: none;
     overflow: auto;
@@ -140,7 +141,8 @@ a:hover .description{
 }
 
 .description{
-  font-size: large;
+  margin-top: 10px;
+  font-size: smaller;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease-in-out;
@@ -150,16 +152,19 @@ a:hover .description{
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   #about, #projects, #cv, #contact{
-    width: 50vw;
+    width: 50.5vw;
+    font-size: 2.6vw;
   }
 }
 
-@media screen and (max-width: 760px) {
-  #about, #projects, #cv, #contact{width: auto;}
+@media (max-width: 800px) {
+  #about, #projects, #cv, #contact{
+    width: auto;
+  height: auto;}
   main{
-    font-size: 5vw;
+    font-size: 1rem;
     nav{
       width: 0px;
       height: 0px;
@@ -183,7 +188,7 @@ a:hover .description{
     border-top: 32px solid white;
     position: absolute;
     left: calc(50% - 20px);
-    top: calc( 100vh - 60px);
+    top: calc( 100vh - 40px);
     animation: downarrow 0.6s infinite alternate ease-in-out;
   }
 }
@@ -192,4 +197,30 @@ a:hover .description{
 @keyframes downarrow {
   0% { -webkit-transform: translateY(0); opacity: 0.7 }
   100% { -webkit-transform: translateY(0.8em); opacity: 1 }
+}
+.project-name{
+  display: flex;
+  align-items: baseline;
+  .unwrap-arrow{
+    margin-right: 6px;
+    border-bottom:0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    border-left: 0.6em solid white;
+  }
+}
+
+@media (max-height: 600px){
+  #about, #projects, #cv, #contact{
+    font-size:1rem;
+  }
+  #contact form textarea{
+    min-height: 6vh;
+    max-height: 6vh;
+}
+}
+
+@media (max-height: 400px){
+  #about, #projects, #cv, #contact{
+    font-size:0.7rem;
+  }
 }
