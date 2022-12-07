@@ -1,7 +1,7 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
 
 window.onscroll = function(){changeColor()}
-
+window.scrollTo(0,0)
 
 function isScrolledIntoView(el) {
   var rect = el.getBoundingClientRect();

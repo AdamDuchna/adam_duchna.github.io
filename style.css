@@ -188,13 +188,16 @@ a:hover .description {
   transition: max-height 0.6s ease-in-out;
 }
 
+#projects a:hover .project-name .unwrap-arrow {
+  transform: rotate(90deg);
+}
+
 .description {
   margin-top: 10px;
   font-size: smaller;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
-  transition-delay: 0.1s;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .mobile-arrow {
@@ -272,6 +275,7 @@ a:hover .description {
   align-items: baseline;
 }
 .project-name .unwrap-arrow {
+  transition: transform 0.25s ease-in-out;
   margin-right: 6px;
   border-bottom: 0.3em solid transparent;
   border-top: 0.3em solid transparent;
